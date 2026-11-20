@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://analistadequalidadeesistemas-ux.github.io/pontinho/sitemap.xml

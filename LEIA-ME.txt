@@ -1,0 +1,60 @@
+Pontinho da Informática — site
+================================
+
+Site de uma página só (HTML + CSS + JS puros, sem build, sem dependência).
+Feito para ser o link da bio do Instagram e a ficha da loja.
+
+## Arquivos
+
+    index.html          a página inteira (HTML, CSS e JS no mesmo arquivo)
+    img/                imagens (logo, fotos emolduradas, foto da placa-mãe)
+    404.html            página de erro
+    robots.txt          libera os buscadores
+    sitemap.xml         mapa do site
+    .nojekyll           impede o GitHub Pages de processar com Jekyll
+
+## Como abrir no PC
+
+Duplo clique em `index.html`. Funciona offline, menos o mapa do Google.
+
+## Como publicar (GitHub Pages, grátis)
+
+1. Crie a conta em github.com (se ainda não tem).
+2. Crie um repositório **público** chamado `pontinhodainformatica`.
+3. Suba o conteúdo desta pasta (todos os arquivos e a pasta `img`).
+4. No repositório: Settings → Pages → Source: `Deploy from a branch`
+   → Branch: `main` / `(root)` → Save.
+5. Em 1 a 2 minutos o site fica em:
+   `https://SEU-USUARIO.github.io/pontinhodainformatica/`
+
+Depois é só colocar esse endereço na bio do Instagram (pelo app do celular)
+e na ficha do Google.
+
+## O que está pronto
+
+- Botão de WhatsApp em 3 lugares (topo, capa, flutuante) + formulário que
+  monta a mensagem pronta.
+- Grade de 6 serviços com ícones desenhados em SVG (sem imagens externas).
+- Galeria com as fotos reais (as mesmas dos posts, mais a placa-mãe).
+- Mapa do Google embutido com o endereço.
+- Botão "Traçar rota".
+- Botão de compartilhar (usa o compartilhamento nativo do celular).
+- Dados estruturados LocalBusiness (schema.org) para o Google entender
+  nome, endereço, telefone, cidades atendidas e serviços.
+- Acessível: contraste alto, foco visível, respeita "reduzir movimento".
+- Roda bem em celular (testado em 360, 390, 414 e 768 px).
+
+## O que trocar quando mudar
+
+| O quê | Onde |
+|---|---|
+| Telefone | buscar `558291856656` no index.html (aparece no JS e nos links) |
+| Endereço | buscar `João Paulo II` |
+| Texto de cada serviço | seção `id="servicos"` |
+| Fotos da galeria | substituir os arquivos em `img/` mantendo o nome |
+
+## Observação
+
+A página não tem formulário com servidor. Ela monta a mensagem e abre o
+WhatsApp — é de propósito: não precisa de hospedagem com PHP nem de banco de
+dados, e a mensagem chega direto no celular.
